@@ -22,6 +22,12 @@ app.use(cors());
 
 app.use("/api", chatRoutes);
 
+app.get("/test", (req, res) => {
+  res.json({
+    message : "test is successful"
+  })
+})
+
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
   connect();
