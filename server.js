@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cors());
 app.get("/test", (req, res) => {
   res.json({
-   message:"last check"
+   message:"Backend Server is working fine"
   })
 })
 
