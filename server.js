@@ -18,15 +18,16 @@ const PORT = 8080;
 
 app.use(express.json());
 app.use(cors());
+app.get("/test", (req, res) => {
+  res.json({
+   message:"checking server"
+  })
+})
 
 
 app.use("/api", chatRoutes);
 
-app.get("/test", (req, res) => {
-  res.json({
-   message:"Now everything is working fine!"
-  })
-})
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
