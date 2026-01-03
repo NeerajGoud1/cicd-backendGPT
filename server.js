@@ -24,8 +24,7 @@ app.use("/api", chatRoutes);
 
 app.get("/test", (req, res) => {
   res.json({
-    message : "successful",
-    message2 : "successful2"
+   message:"Now everything is working fine!"
   })
 })
 
