@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cors());
 app.get("/test", (req, res) => {
   res.json({
-   message:"checking server"
+   message:"iam mad in checking"
   })
 })
 
